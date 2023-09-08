@@ -6,4 +6,4 @@ def indexpage(request):
 
 def ArtikelFrage(request):
     Fragen=models.Uebung.objects.all()
-    return render(request, 'ArtikelFragenSeite.html',{'Fragen':Fragen})
+    return render(request, 'Uebungen/ArtikelFragenSeite.html',context={'Fragen':Fragen})
