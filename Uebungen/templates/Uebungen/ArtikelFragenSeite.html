@@ -1,0 +1,21 @@
+<h1> 
+    Ergaenzen Sie den Artikel
+</h1>
+<ul>
+    {% for i in Fragen %}
+
+    <li> 
+     {{i.id}} . {{i.Frage}} <br>
+    </li>
+   {% endfor %} 
+</ul>   
+
+Die Antworten sind <br>
+<ul>
+    {% for i in Fragen %}
+
+    <li> 
+     {{i.id}} . {{i.Antwort}} <br>
+    </li>
+   {% endfor %} 
+</ul>   
